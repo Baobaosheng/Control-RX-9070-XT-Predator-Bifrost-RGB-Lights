@@ -1,0 +1,19 @@
+[project]
+name = "acer-bifrost-rgb"
+version = "0.1.0"
+description = "Linux RGB control for the Acer Predator BiFrost RX 9070 XT logo"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+acer-bifrost-rgb = "acer_bifrost_rgb:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
